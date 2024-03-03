@@ -1,0 +1,128 @@
+.container1{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    margin-left: 60px;
+    margin-right: 60px;
+    line-height: 30px;
+}
+.col-2 {
+    margin-left: 500px;
+    margin-right: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+.container2{
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
+}
+.card{
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.container{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+
+}
+.card-title{
+    color:  #09453b;
+    text-decoration: solid;
+    font-weight: bolder;
+}
+.card-subtitle{
+    font-style: italic;
+    color: black;
+    font-weight: bold;
+}
+
+
+.row img{
+    border-radius: 15px;
+}
+.card-img{
+    height: 210px;
+}
+.arrow{
+    width: 40px;
+    height: 40px;
+    border: solid;
+    border-radius: 50%;
+    /* border-width: 1px; */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+
+}
+.arrow1{
+    width: 40px;
+    height: 40px;
+    border: solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.image img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #09453b;
+
+}
+.carousel-outer{
+    width: 20px;
+    height: 50px;
+    padding: 20px;
+
+}
+
+.carousel-indicators button{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: solid;
+   border-color:  #09453b;
+   background-color: #09453b;
+}
+.carousel-indicators .active {
+    width: 22px;
+    height: 8px;
+    border-radius: 10px;
+    background-color:  #09453b;
+    
+}
+p{
+    color:  #09453bce;
+
+}
+
+h5{
+    color:  #09453b;  
+    font-weight: bolder;
+}
+
+.carouselExampleIndicators{
+    padding: 20px;
+}
+
+.card{
+    
+    box-sizing: border-box;
+    border-color: #09453b;
+    text-align: justify;
+    text-decoration: #09453b;
+    box-shadow: #09453b;
+    border-style: ridge;
+
+}
+.card :hover{
+   transform-style: flat;
+}

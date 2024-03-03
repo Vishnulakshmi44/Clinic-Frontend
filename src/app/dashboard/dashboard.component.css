@@ -1,0 +1,33 @@
+/* Webpixels CSS */
+/* Utility and component-centric Design System based on Bootstrap for fast, responsive UI development */
+/* URL: https://github.com/webpixels/css */
+
+@import url(https://unpkg.com/@webpixels/css@1.1.5/dist/index.css);
+
+/* Bootstrap Icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.0/font/bootstrap-icons.min.css");
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:  #13584c;
+}
+
+th{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#13584c;
+    font-size: larger;
+    font-weight: bolder;
+
+}
+
+.card-body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#13584c;
+    font-size: larger;
+    font-weight: bolder;
+}
+h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#13584c;
+    font-size: larger;
+    font-weight: bolder;
+}

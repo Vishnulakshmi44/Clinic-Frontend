@@ -1,0 +1,67 @@
+.service{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar{
+    background-color: #044439;
+    font-family: 'Arbutus Slab', serif;
+    font-size: larger;
+}
+.nav-item{
+color: aliceblue;
+font-family:'Arbutus Slab', serif;
+font-size: larger;
+
+}
+.btn1{
+    color: #0fad93;
+    background-color: #13584db0;
+    border-radius: 10px;
+    border-color: aliceblue;
+    border-style: groove;
+   
+}
+
+.card{
+    width: 300px;
+    height: 400px;
+    margin-left: 60px;
+    margin-right: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+   
+
+}
+
+.card :hover{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.container1{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    margin-left: 60px;
+    margin-right: 60px;
+    line-height: 30px;
+    
+}
+
+.img{
+border-radius: 20px;
+
+}
+
+.img :hover {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+
+.btn{
+    color: #ffffff;
+    background-color: #044439;
+}
+

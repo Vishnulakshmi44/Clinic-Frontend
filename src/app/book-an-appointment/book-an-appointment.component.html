@@ -1,0 +1,143 @@
+<nav class="navbar navbar-expand-lg  " style="width: 100%;  z-index: 1000;">
+  <div class="container-fluid">
+    <a class="navbar-brand ms-lg-5 fw-bold font-awesome fs-2" routerLink="main/home" style="color: #ffffff;"><i
+        class="fa-solid fa-house-chimney-medical " style="color: #ffffffec;"></i>Rise Medical Center</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-light">
+        <li class="nav-item">
+          <a class="nav-link active ms-lg-4 me-4 " aria-current="page" routerLink="/" style="color: #ffffff;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ms-lg-4 me-4" routerLink="/home/services" style="color: #ffffff;">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ms-lg-4 me-4" routerLink="/home/finddoctor" style="color: #ffffff;">Find a
+            doctor</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ms-lg-4 me-4" routerLink="" style="color: #ffffff;">Contact Us</a>
+        </li>
+
+        <button class="btn btn- ms-lg-3 me-5 text-white fw-bold border-white" routerLink="/patient/patientlogin"
+          style="color: #ffffff;"><i class="fa-solid fa-users" style="color: #fafafa;"></i> Patient Portal</button>
+        <button class="btn btn- ms-lg-4 me-5 text-white fw-bold border-white" routerLink="/admin/adminlogin"
+          style="color: #ffffff;"> <i class="fa-solid fa-user " style="color: #ffffff;"></i> Admin Portal</button>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<section class="appointment-section">
+  <div class="container">
+    <div class="sec-title">
+      <h2>Book an Appoinment</h2>
+    </div>
+    <div class="row clearfix">
+      <div class="col-md-6">
+
+
+      <!--Form Column-->
+      <div class="form-column col-md-8 col-sm-12 col-xs-12">
+        <div class="inner-column">
+
+          <!-- Default Form -->
+          <div class="default-form">
+
+            <!--Contact Form-->
+            <form [formGroup]="appointmentForm" (ngSubmit)="storeAppointments()">
+              <div class="row clearfix">
+
+                <div class="">
+
+                  <!-- NAME -->
+                  <div class="form-group">
+                    <input style="margin-bottom: 3px; border-radius: 5px;  border: 2px solid #044439; width: 417px; height: 50px;"
+                      formControlName="Name" type="text" name="Name" placeholder="Name" required>
+                  </div>
+
+
+                  <!-- <div class="column col-md-6 col-sm-6 col-xs-12"> -->
+                  <!-- EMAIL -->
+
+                  <div class="form-group">
+                    <input
+                      style="width: 417px; height: 50px; margin-top: 30px; border-radius: 5px;  border: 2px solid #044439;"
+                      formControlName="Email" type="email" name="Email" placeholder="Email" required>
+                  </div>
+
+                  <!-- MOBILE -->
+                  <div class="form-group">
+                    <input
+                      style="width: 417px; height: 50px; margin-top: 30px; border-radius: 5px; border: 2px solid #044439;"
+                      formControlName="MobileNumber" type="text" name="MobileNumber" placeholder="Phone" required>
+                  </div>
+                  <!-- </div> -->
+
+                  <div class="form-group">
+                    <!-- <div class="col-md-5"> -->
+                      <!-- <label for="Doctor" class="form-label"></label> -->
+                      <select style="width: 417px; height: 50px; border-radius: 5px; border: 2px solid #044439; margin-top: 30px; "
+                        formControlName="Doctor" name="Doctor" id="Doctor">
+                        <option disabled selected value="">Select a Doctor</option>
+                        <option>Dr.John Mathew</option>
+                        <option>Dr.Ranjan Thilak</option>
+                        <option>Dr.Liji N</option>
+                        <option>Dr.Imthyas</option>
+                        <option>Dr. Alen P</option>
+                        <option>Dr. Jeena Ravi</option>
+                        <option>Dr. Siju Mathew</option>
+                        <option>Dr.Rajeevan</option>
+                        <option>Dr.Aiswarya</option>
+                        <option>Dr.Surya M</option>
+                        <option>Dr.Ajila</option>
+                      </select>
+                    </div>
+
+
+                    <div class="form-group">
+                      <input
+                        style="width: 417px; height: 50px; margin-top: 10px; border-radius: 5px; border: 2px solid #044439; "
+                        formControlName="scheduleDate" type="date" class="datepicker" name="scheduleDate"
+                        placeholder="Schedule Date" required>
+                      <!-- <i class="far fa-calendar-alt"></i> -->
+                    </div>
+
+                    <div class="form-group">
+                      <input style="width: 417px; height: 50px;border-radius: 5px; border: 2px solid #044439; margin-top: 10px;"
+                        formControlName="scheduleTime" class="timepicker" type="time" name="scheduleTime"
+                        placeholder="Schedule Time">
+                      <!-- <i class="far fa-clock"></i> -->
+                    </div>
+                  <!-- </div> -->
+
+
+
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group " >
+                    <button class="theme-btn appointment-btn" type="submit" name="submit-form">Fix An
+                      Appoinment</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+
+          </div>
+          <!--End Default Form -->
+
+        </div>
+      </div>
+    </div>
+<div class="col-md-6">
+  <img src="https://cdni.iconscout.com/illustration/premium/thumb/book-online-medical-appointment-1946927-1651972.png" width="700px" height="500px"  alt="">
+</div>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

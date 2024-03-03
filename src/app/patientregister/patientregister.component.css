@@ -1,0 +1,29 @@
+.h5{
+    font-weight: bold;
+}
+.admin{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    text-decoration: solid;
+}
+.btn{
+    color: #044439;
+    background-color: #044439;
+    text-decoration: #044439;
+}
+
+.small{
+    color: #044439;
+}
+.p{
+    color: #044439;  
+}
+
+form{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #044439;;
+}
+
+.img{
+    height: 500px;
+}

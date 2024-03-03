@@ -1,0 +1,113 @@
+<app-header></app-header>
+<section class="admin" style="background-color: #19543d;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-xl-10">
+                <div class="card" style="border-radius: 1rem;">
+                    <div class="row g-0">
+                        <div class="col-md-6 col-lg-5 d-none d-md-block">
+                            <img src="https://img.freepik.com/free-vector/healthcare-smart-card-abstract-concept-illustration-manage-patient-identity-practitioners-pharmacists-secure-access-medical-records-improved-communication_335657-884.jpg?w=2000"
+                                alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+                        </div>
+                        <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                            <div class="card-body p-4 p-lg-5 text-black">
+
+                                <form [formGroup]="patientRegisterForm" (ngSubmit)="patientRegister()">
+
+                                    <div class="d-flex align-items-center mb-3 pb-1">
+                                        <span class="h1 fw-bold mb-0">Rise Medical Center</span>
+                                    </div>
+
+                                    <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;"> New Patient
+                                        Registration Form</h5>
+
+                                    <div class="form-outline mb-4">
+                                        <input name="PatientName" formControlName="PatientName" type="text" id="form2Example17" class="form-control  form-control-lg" >
+                                        <label class="form-label" for="form2Example17">Patient Name</label>
+                                        <!-- <div *ngIf="this.patientRegisterForm.get('PatientName')?.errors&&this.patientRegisterForm.get('PatientName')?.touched"
+                                            class="text-danger">*Invalid Name</div> -->
+
+
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <input name="Age" formControlName="Age" type="number" id="form2Example27" class="form-control form-control-lg" />
+                                        <label class="form-label" for="form2Example27">Age</label>
+                                        <!-- <div *ngIf="this.patientRegisterForm.get('Age')?.errors&&this.patientRegisterForm.get('Age')?.touched"
+                                            class="text-danger">*Invalid Age</div> -->
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <input name="BloodGroup" formControlName="BloodGroup" type="text" id="form2Example27" class="form-control form-control-lg" />
+                                        <label class="form-label" for="form2Example27">Blood Group</label>
+                                        <!-- <div *ngIf="this.patientRegisterForm.get('BloodGroup')?.errors&&this.patientRegisterForm.get('BloodGroup')?.touched"
+                                            class="text-danger">*Invalid Entry</div> -->
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+
+                                       
+                                        <div class="col-md-4">
+                                            <label  for="Gender" class="form-label"></label>
+                                            <select name="Gender" formControlName="Gender" style="width: 28rem;height: 4rem;"  formControlName="Gender" name="Gender" id="Gender" class="form-select">
+                                              <option disabled selected value="">Select a Gender</option>
+                                              <option>Female</option>
+                                              <option>Male</option>
+                                              <option>Other</option>
+                                              
+                                            </select>
+                                          </div>
+
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        <input name="Address" formControlName="Address" type="text" id="form2Example27" class="form-control form-control-lg" />
+                                        <label class="form-label" for="form2Example27">Address</label>
+                                        <!-- <div *ngIf="this.patientRegisterForm.get('Address')?.errors&&this.patientRegisterForm.get('Address')?.touched"
+                                        class="text-danger">*Invalid Address</div> -->
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <input name="MobileNumber" formControlName="MobileNumber" type="text" id="form2Example27" class="form-control form-control-lg" />
+                                        <label class="form-label" for="form2Example27">Mobile Number</label>
+                                        <!-- <div *ngIf="this.patientRegisterForm.get('BloodGroup')?.errors&&this.patientRegisterForm.get('BloodGroup')?.touched"
+                                        class="text-danger">*Invalid Entry</div> -->
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        <input name="EmailAddress" formControlName="EmailAddress" type="email" id="form2Example17" class="form-control form-control-lg" />
+                                        <label class="form-label" for="form2Example17">Email Address</label>
+                                        <!-- <div *ngIf="this.patientRegisterForm.get('EmailAddress')?.errors&&this.patientRegisterForm.get('EmailAddress')?.touched"
+                                        class="text-danger">*Invalid Email Address</div> -->
+                                    </div>
+
+                                    <div class="form-check d-flex justify-content-center mb-4">
+                                        <input class="form-check-input me-2" type="checkbox" value=""
+                                            id="form2Example3cg" />
+                                        <label class="form-check-label" for="form2Example3g">
+                                            I agree all statements in <a href="#!" class="text-body"><u>Terms of
+                                                    service</u></a>
+                                        </label>
+                                    </div>
+
+                                    <div class="pt-1 mb-4">
+                                        <button class="btn btn-success btn-lg btn-block text-light"
+                                            type="submit">Register</button>
+                                    </div>
+
+                                    <p class="mb-5 pb-lg-2" style=" color: #044439;">Already Registered?
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a routerLink="/patient/patientlogin" style=" color: #044439;">Login
+                                            here</a>
+                                    </p>
+                                    <a href="" class="small ">Terms of use.</a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="" class="small ">Privacy policy</a>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>

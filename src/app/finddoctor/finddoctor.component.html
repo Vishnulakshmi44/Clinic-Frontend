@@ -1,0 +1,94 @@
+<nav class="navbar navbar-expand-lg  " style="width: 100%;  z-index: 1000;">
+    <div class="container-fluid">
+        <a class="navbar-brand ms-lg-5 fw-bold font-awesome fs-2" routerLink="main/home" style="color: #ffffff;"><i
+                class="fa-solid fa-house-chimney-medical " style="color: #ffffffec;"></i>Rise Medical Center</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-light">
+                <li class="nav-item">
+                    <a class="nav-link active ms-lg-4 me-4 " aria-current="page" routerLink=""
+                        style="color: #ffffff;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active ms-lg-4 me-4" routerLink="home/services"
+                        style="color: #ffffff;">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active ms-lg-4 me-4" routerLink="home/finddoctor" style="color: #ffffff;">Find a
+                        doctor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active ms-lg-4 me-4" routerLink="" style="color: #ffffff;">Contact Us</a>
+                </li>
+
+                <button class="btn btn- ms-lg-3 me-5 text-white fw-bold border-white" routerLink="patient/patientlogin"
+                    style="color: #ffffff;"><i class="fa-solid fa-users" style="color: #fafafa;"></i> Patient
+                    Portal</button>
+                <button class="btn btn- ms-lg-4 me-5 text-white fw-bold border-white" routerLink="admin/adminlogin"
+                    style="color: #ffffff;"> <i class="fa-solid fa-user " style="color: #ffffff;"></i> Admin
+                    Portal</button>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div class="slider">
+    <div class="container">
+        <h1>
+            We Care about your&nbsp;
+            <span> Health</span>
+        </h1>
+        <p>Our team of doctors includes leading specialists who are highly skilled and experienced in their respective
+            arena of all health related problems.</p>
+
+
+
+    </div>
+
+</div>
+
+<section class=" mt-5">
+    <div class="container1">
+        <h1 class="text-center text-dark mt-5 me-4">Meet Our Doctors</h1>
+    </div>
+</section>
+
+<!-- Searchbar  -->
+<div class="main">
+    <div class="input-group">
+        <input (keyup)="filter($event)" type="text" class="form-control" placeholder="Search Your Doctor">
+        <div class="input-group-append">
+            <button class="btn btn-secondary" type="button">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </div>
+</div>
+<!-- Doctors -->
+<div class="container-fluid d-flex">
+    <div class="row">
+        <!-- <div class="d-flex d-flex flex-row flex-wrap"> -->
+            <!-- 1 -->
+            <div class="card" style="width: 18rem;" *ngFor="let list of allDoctorList  |filter:searchKey : 'DoctorName'">
+                <img [src]="list.Image" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">{{list.DoctorName}}</h4>
+                    <h5>{{list.Department}}</h5>
+                    <a routerLink="/home/bookAppointment" class="btn">Book Appointment </a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- </div> -->
+
+
+
+
+
+
+<app-footer></app-footer>
